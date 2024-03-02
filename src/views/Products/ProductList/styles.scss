@@ -1,0 +1,97 @@
+.product-list-wrapper{
+  .product-card{
+    position: relative;
+    .product-card-wrapper{
+      padding: 1rem;
+      border: 1px solid #EDF4F5;
+      border-radius: 11px;
+      img{
+        width: 45px;
+        height: auto;
+      }
+      .product-title{
+        font-size: 1rem;
+        padding: 0.6rem;
+        margin: auto 0;
+      }
+      .product-status{
+        padding: 0.5rem;
+        height: 50%;
+        margin: auto 0;
+        border-radius: 50%;
+        &.draft{
+          background-color: #CADDEB;
+          &::before{
+            color: #005CA3;
+          }
+        }
+        &.in_review{
+          background-color: #F7ECCC;
+          &::before{
+            color: #DAA310;
+          }
+        }
+        &.verified{
+          background-color: #CAEBC8;
+          &::before{
+            color: #16A611;
+          }
+        }
+        &.declined{
+          background-color: #F0C0C0;
+          &::before{
+            color: #C50F0F;
+          }
+        }
+        img{
+          width: 0.75rem;
+        }
+      }
+      .card-actions{
+       float: right;
+       opacity: 0;
+       transition: opacity 0.2s;
+        .card-action{
+          margin: 0.25rem;
+          cursor: pointer;
+          &.icon-delete:hover{
+            &::before{
+              color: #C50F0F;
+            }
+          }
+          &.icon-duplicate:hover{
+            &::before{
+              color: #005CA3;
+            }
+          }
+        }
+      }
+      .extended-card{
+        p{
+          margin-bottom:0;
+          font-size: 0.75rem;
+          padding: 0.5rem;
+          .card-info{
+            padding: 0.5rem;
+            margin-top: 0.25rem;
+          }
+          span img{
+            width: 1rem;
+          }
+        }
+        .emissions-info{
+          float: right;
+          transform: translateY(-1.5rem);
+          border-radius: 20px;
+          background-color: #EAF0F2;
+          padding: 0.25rem 0.5rem;
+        }
+      }
+      
+    }
+  }
+
+  .product-card:hover .card-actions{
+    opacity: 1;
+  }
+}

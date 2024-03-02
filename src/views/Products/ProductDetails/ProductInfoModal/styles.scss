@@ -1,0 +1,41 @@
+.product-info-modal-wrapper{
+ .product-info{
+  width: fit-content;
+  height: fit-content;
+  img.product-img{
+  height: 100px;
+  width: 100px;
+  }
+
+  .product-title{
+    h3{
+      font-size: 1.5rem;
+    }
+    .emissions-info{
+      border-radius: 20px;
+      background-color: #EAF0F2;
+      padding: 0.33rem 0.66rem;
+      width: fit-content;
+      .card-info{
+        padding-left: 4px;
+      }
+    }
+  }
+ }
+
+ .additional-info{
+  .card-info{
+    padding-left: 4px;
+  }
+ }
+
+
+  .additional-title{
+  h5{
+    font-size: 1rem;
+  }
+  .additional-desc{
+    font-size: 1rem;
+  }
+ } 
+}

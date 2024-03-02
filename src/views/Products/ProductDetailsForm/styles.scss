@@ -1,0 +1,113 @@
+@import "../../../styles/variables";
+
+
+.product-details-form-wrapper{
+  background-color: #F6F7FB;
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+  margin-bottom: 15rem;
+  transition: width 0.2s;
+  &.final-step{
+    width: 80%;
+    background-color: $white;
+  }
+    .form-step-wrapper{
+      background-color: #ffffff;
+      margin-top: 2rem;
+      min-height: 25rem;
+      border-radius: 8px;
+      .form-step-header{
+        padding: 1rem 2rem;
+        .form-title{
+          font-size: 1rem;
+          font-weight: 500;
+          .form-back{
+            cursor: pointer;
+            margin: 0.25rem 0.5rem 0;
+            font-size: 1.125rem;
+          }
+          img{
+            padding: 1rem;
+            padding-left: 0;
+          }
+        }
+      }
+      .ant-form{
+        font-size: 1rem;
+        padding: 1rem 2rem;
+        .form-wrapper.ant-row{
+          .ant-col{
+            padding: 0 1rem;
+          }
+          .serial-number{
+            border-radius: 50%;
+            background-color: #9BACB1;
+            color: $white;
+            padding: 0.25rem 0.7rem;
+            margin: 1.5rem 0;
+            height: 2rem;
+          }
+          .per-unit{
+            margin-top: 1.8rem;
+            color: $primary-color;
+          }
+          .ant-col.close-icon{
+            padding: 0 8px;
+            height: 50%;
+            margin: auto 0;
+            cursor: pointer;
+            img{
+              width: 1.25rem;
+            }
+          }
+        }
+        
+        }
+
+    }
+}
+
+
+.ant-drawer.ant-drawer-right.ant-drawer-open,
+  .ant-drawer.ant-drawer-bottom.ant-drawer-open{
+
+box-shadow: none;
+border-top: 1px solid #7090B029;
+border-left: 1px solid #7090B029;
+margin-left: 5rem;
+ .ant-drawer-content-wrapper{
+  box-shadow: none;
+  .ant-drawer-content .ant-drawer-body .product-details-steps{
+    padding: 1rem 3rem;
+    width: 85vw;
+    padding: 2rem;
+  }
+}
+}
+
+.ant-drawer.ant-drawer-right.ant-drawer-open{
+  .ant-drawer-content .ant-drawer-body .product-info-wrapper{
+    .product-details{
+      margin: 2rem 0;
+    }
+    .emission-info{
+      background-color: #EDF4F5;
+      padding: 1rem;
+      border-radius: 8px;
+      .emission-row{
+        h4{
+          font-size: 0.875rem;
+          margin-top: 0.25rem;
+        }
+        .emission-value{
+          color: #66939E;
+          font-size: 1.125rem;
+        }
+      }
+    }
+    .product-dashboard-link{
+      margin: 2rem 0;
+    }
+  }
+}

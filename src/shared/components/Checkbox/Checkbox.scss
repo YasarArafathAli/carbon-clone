@@ -1,0 +1,9 @@
+@import "src/styles/variables";
+.checkbox-container {
+  .ant-checkbox-wrapper{
+    span:has(.checkbox-title){
+      margin: auto 0;
+    }
+    
+  }
+}

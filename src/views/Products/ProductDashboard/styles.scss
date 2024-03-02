@@ -1,0 +1,66 @@
+@import "../../../styles/variables";
+
+.product-dashboard-wrapper{
+  
+  .analytics{
+     .analytics-title h4{
+      color: #125E73;
+      font-size: 1rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+    }
+    .analytics-card{
+    padding-left: 12%;
+    border-radius: 15px;
+    background-color: #FFF1F1;
+    h2{
+      font-size: 8rem;
+      color: $primary-red;
+      transition: all 0.2s;
+
+      margin-bottom: 0;
+      .header-units{
+        font-size: 2rem;
+        margin-left: 1rem;
+      }
+    }
+    .growth-wrapper{
+      transform: translateY(-1rem);
+      .growth-info{
+        font-size: 0.75rem;
+        color: $primary-red;
+      }
+      .goal-info{
+        font-size: 1rem;
+        color: #125E73;
+        font-weight: 500;
+      }
+    }
+    }
+    .carbon-footprint{
+      background-color: #66939E33;
+      padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    .label {
+      position: relative;
+      img{
+        width: 200px;
+      }
+      h4{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-35%,-50%);
+        font-size: 1rem;
+        font-weight: 700;
+        margin: 0;
+        line-height: 1;
+        .value{
+          font-size: 2rem;
+          font-weight: 900;
+        }
+      }
+    }
+    }
+}}

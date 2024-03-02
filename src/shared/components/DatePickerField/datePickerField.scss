@@ -1,0 +1,12 @@
+@import "src/styles/variables";
+
+.datepicker-field {
+    .ant-picker{
+        display: block;
+
+            padding: 0.66rem 0.8rem;
+            height: 43px;
+            border: 1px solid $input-border-color;
+            border-radius: 8px;
+    }
+}

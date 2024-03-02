@@ -1,0 +1,50 @@
+@import "../../../styles/variables";
+
+.tabs-wrapper{
+  .ant-tabs{
+    .ant-tabs-nav {
+      &::before{
+        border: none;
+      }
+      .ant-tabs-nav-wrap{
+        .ant-tabs-nav-list{
+          background-color: #F4F7F7;
+          border-radius: 10px;
+          padding: 0.25rem 1rem;
+          .ant-tabs-tab{
+            padding: 0.5rem 0.5rem 0.25rem;
+            margin: 0 3rem;
+            transition: all 0.2s;
+            margin-left: 0;
+            font-size: 1rem;
+            .tab-title{
+              z-index: 3;
+              transition: all 0.2s;
+              letter-spacing: 0.8px;
+              .tab-icon{
+                padding-right: 0.25rem;
+                font-size: 0.75rem;
+                &::before{
+                  transition: all 0.2s;
+            }
+              }
+            }
+            &-active{
+              .tab-title, .tab-title .tab-icon::before{
+                color: $white;
+
+              }
+            }
+          }
+          .ant-tabs-ink-bar {
+            background-color: #66939E;
+            height: 2rem;
+            z-index: -1;
+            bottom: 6px;
+            border-radius: 6px;
+          }
+        }
+    }}
+  }
+}
+

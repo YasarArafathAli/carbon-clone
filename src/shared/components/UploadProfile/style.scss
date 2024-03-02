@@ -1,0 +1,24 @@
+@import "../../../styles/variables";
+.upload-profile-wrapper{
+  border: 1px solid $input-border-color;
+  border-radius: 50%;
+  width: 4rem;
+  position: relative;
+  height: 4rem;
+  margin: 0 auto 2rem;
+  cursor: pointer;
+  .icon-wrapper{
+    position: absolute;
+  right: 0;
+  bottom: 0;
+  }
+  img{  
+    height: 4rem;
+  border-radius: 50%;
+    width: 4rem;
+    object-fit: cover;
+  }
+  input{
+    display: none;
+  };
+}

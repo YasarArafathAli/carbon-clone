@@ -1,0 +1,11 @@
+.home-wrapper{
+  padding: 2rem;
+  margin-left: 5rem;
+  &:has(.product-details-form-wrapper){
+    background-color: #F6F7FB;
+  }
+  &:has(.product-details-form-wrapper.final-step){
+    background-color: #fff;
+  }
+
+}

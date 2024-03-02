@@ -1,0 +1,104 @@
+@import "../../../styles/variables";
+
+.emission-card{
+  background-position: 0px 10rem;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  background-size: contain;
+  position: relative;
+  transition: background-color 0.2s;
+  
+
+  &.product.red-card{
+    background-color: #FFF2F1;
+    background-image:  url("../../../assets/images/product_bg_red.svg");
+    background-size: 125%;
+  }
+  &.company.red-card{
+    background-color: #FFF2F1;
+    background-image: url("../../../assets/images/company_red.svg");
+  }
+  &.product.green-card{
+    background-color: #F7FAFA;
+    background-image: url("../../../assets/images/product_bg_green.svg");
+  }
+  &.company.green-card{
+    background-color: #F7FAFA;
+    background-image: url("../../../assets/images/company_green.svg");
+
+  }
+  &__wrapper{
+    padding: 2rem;
+    &.ant-col{
+      min-height: 15rem;
+    }
+    .emission-card__pre-info{
+      color: $primary-blue;
+      font-size: 1rem;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+    h2{
+      font-size: 3.5rem;
+      color: $primary-red;
+      transition: all 0.2s;
+
+      margin-bottom: 0;
+      .header-units{
+        font-size: 2rem;
+        margin-left: 1rem;
+      }
+      &.green-card{
+        color : #66939E;
+      }
+    }
+    .growth-wrapper{
+      transform: translateY(-1rem);
+      .growth-info{
+        font-size: 0.75rem;
+        color: $primary-red;
+      }
+      .goal-info{
+        font-size: 1rem;
+        color: #125E73;
+        font-weight: 500;
+      }
+    }
+    
+  }
+  .resource-img{
+    position: absolute;
+    overflow: hidden;
+    &.company{
+      top: 5px;
+      right: -12px;
+    }
+    &.product{
+      top: 3.5rem;
+      right: 1rem;
+      &.green-card{
+        top: 4.5rem;
+      }
+    }
+    &-green{
+      position: absolute;
+      transition: right ease-in 0.2s;
+      &.company{
+        top: 3rem;
+        right: 1rem;
+        &.hidden{
+          right: -8rem;
+        }
+      }
+      &.product{
+        right: 0;
+        top: 1rem;
+        &.hidden{
+          top: 2rem;
+          right: -8rem;
+        }
+      }
+      
+    }
+  }
+}

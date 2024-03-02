@@ -1,0 +1,85 @@
+@import "../../.../../../styles/variables";
+.auth-wrapper{
+  display: flex;
+  overflow: hidden;
+  .auth-welcome-img {
+    max-height: 100vh;
+    position: relative;
+    img{
+      width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+
+    }
+    .auth-welcome-banner-info{
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      width: 60%;
+      h1{
+        font-size: 2.5rem;
+        font-weight: 400;
+        margin: 0;
+        color: $primary-green;
+        margin-bottom: 0.5rem;
+        span{
+          font-size: 1rem;
+          padding: 4px 8px;
+        }
+      }
+      p{
+        color: $secondary-green;
+        font-weight: 300;
+        width: 85%;
+        font-size: 1.2rem;
+        margin: auto;
+      }
+
+    }
+  }
+
+  .auth-wrapper-header{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    .header-logo{
+      text-align: center;
+      margin-bottom: 3rem;
+      img{
+      width: 16rem;
+    }
+  }
+}
+  .auth-login-wrapper,
+  .auth-register-wrapper,
+  .auth-company-details-wrapper{
+    padding: 0 25%;
+    // text-align: center;
+    .form-header{
+      .header-info{
+        h2{
+          font-size: 1.4rem;
+          color: $primary-green;
+          margin-bottom: 0;
+        }
+    }
+    }
+    .form-actions{
+      margin-top: 2rem;
+    }
+
+    .forgot-password-link{
+      text-align: right;
+      transform: translatey(-1rem);
+    }
+    }
+
+  .auth-company-details-wrapper{
+    .form-header .header-info{
+      h2{
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

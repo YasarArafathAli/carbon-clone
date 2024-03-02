@@ -1,0 +1,42 @@
+@import "src/styles/variables";
+
+.button {
+    display: inline;
+    .ant-btn{
+        display: inline;
+        &.ant-btn-primary ,
+        &.ant-btn-secondary ,
+        &.ant-btn-default ,
+        &.ant-btn-ghost ,
+        &.ant-btn-outlined ,
+        &.ant-btn-cancel ,
+        &.ant-btn-danger{
+            width: 100%;
+            }
+            text-emphasis: none;
+
+        &.ant-btn-link,
+        &.ant-btn-text{
+            border: none;
+            display: inline;
+            background-color: transparent;
+            padding: 0 0 0 2px;
+            font-weight: 500;
+        }
+        .custom-prefix-icon{
+            padding-right: 0.5rem;
+            transform: translateY(-0.125rem);
+        }
+        .custom-suffix-icon{
+            transform: translateY(-0.125rem);
+            padding-left: 0.5rem;
+            // width: 2rem;
+        }
+        &.ant-btn-text{
+            color: #9BACB1;
+        }
+    }
+
+    &:has(.ant-btn-link){display: inline;}
+    &:has(.ant-btn-text){display: inline;}
+}

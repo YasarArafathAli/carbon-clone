@@ -1,0 +1,26 @@
+@import "src/styles/variables";
+
+.table {
+  .ant-table-wrapper .ant-table-content{
+    .ant-table-thead,
+    .ant-table-tbody{
+      tr {
+        th.ant-table-cell,
+        td.ant-table-cell {
+          &.table-actions {
+            display: none;
+            width: 0;
+
+          }
+        }
+      }
+      tr.ant-table-row:hover{
+        td.ant-table-cell.table-actions.ant-table-cell-row-hover{
+          display: inline;
+          transform: translateX(-2rem);
+
+        }
+      }
+    }
+  }
+}

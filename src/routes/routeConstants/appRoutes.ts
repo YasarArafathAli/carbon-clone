@@ -1,0 +1,40 @@
+export const NavigationRoutes = {
+  AUTH: "/auth",
+  REGISTER: "/auth/register",
+  LOGIN: "/auth/login",
+  COMPANY_DETAILS: "auth/company-details",
+  COMPANY_ADDRESS: "auth/company-address",
+  SUBSCRIPTION: "auth/subscription",
+  ADD_USER: "auth/add-user",
+  FORGOT_PASSWORD: "auth/forgot-password",
+  DASHBOARD:"/dashboard",
+  PRODUCT: "/product",
+  PRODUCT_FORM: "/product/create",
+  VALUE_CHAIN: "/value-chain",
+  ACCOUNTS: "/accounts",
+  PRODUCT_DASHBOARD: "/product/dashboard",
+  PRODUCT_SUMMARY: "/product/summary"
+};
+
+export const AppRoutes = {
+  AUTH: "/auth/*",
+  REGISTER: "/register",
+  COMPANY_DETAILS: "/company-details",
+  COMPANY_ADDRESS: "/company-address",
+  SUBSCRIPTION: "auth/subscription",
+  ACC_SUBSCRIPTION: "accounts/subscription",
+  DASHBOARD:"/dashboard",
+  PRODUCT: "/product",
+  VALUE_CHAIN: "/value-chain",
+  ACCOUNTS: "/accounts",
+  PRODUCT_FORM_CREATE: "/product/create",
+  PRODUCT_FORM_EDIT: "/product/edit",
+  PRODUCT_DASHBOARD: "/product/dashboard",
+  ADD_USER: "/add-user",
+  PRODUCT_SUMMARY: "/product/summary",
+  FORGOT_PASSWORD: "/forgot-password",
+  VERIFY_EMAIL: "/verify-email",
+  LOGIN: "/login",
+  APP_COMPONENTS:"/app-component",
+  HOME: "/*"
+};

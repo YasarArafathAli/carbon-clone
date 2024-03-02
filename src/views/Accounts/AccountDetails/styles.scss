@@ -1,0 +1,33 @@
+.account-details-wrapper{
+  .account-card{
+    box-shadow: 0px 0px 10px #66939E26;
+    border-radius: 10px;
+    padding: 1rem 1.5rem 0;
+    margin-bottom: 2rem;
+    img{
+      width: 3rem;
+    }
+    .title{
+      h2 {
+        .dot{
+          font-size: 0.75rem;
+        }
+        .title-desc{
+        font-size: 0.875rem;
+        font-weight: 400;
+      }}
+    }
+
+    .company-info{
+      .title{
+        font-size: 0.875rem;
+        color: #9bacb1;
+        font-weight: 500;
+      }
+      .value{
+        color: #000000;
+        padding-left: 0.5rem;
+      }
+    }
+  }
+}
